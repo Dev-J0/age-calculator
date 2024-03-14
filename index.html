@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,23 +15,69 @@
   </style>
 </head>
 <body>
+<div class="mainContainer">
 
-  Day
-  DD
+    <div class="firstContainer">
+    
+      <form>
 
-  Month
-  MM
+        <div class="day">
+          
+          <label for="day">DAY</label>
+            <input 
+            id="insert-day" 
+            maxlength="2"
+            placeholder="DD" 
+            type="number" 
+            min="1" 
+            max="31" required>
+        </div>
 
-  Year
-  YYYY
+        <div class="error-message">This field is required</div>
 
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="month">
+      <label for="month">MONTH</label>
+      <input 
+            id="insert-month" 
+            maxlength="2"
+            placeholder="MM" 
+            type="number" 
+            min="1" 
+            max="12" required>
+     </div>
+
+     <div class="error-message">This field is required</div>
+     
+      <div class="year">
+        <label for="year">YEAR</label>
+            <input 
+            id="insert-year" 
+            maxlength="4"
+            placeholder="YYYY" 
+            type="number" 
+            min="1910" 
+            max="2024" required>
+       </div>
+
+        <div class="error-message">This field is required</div>
+        
+    </form>
+      </div>
+
+      <div class="secondContainer">
+        -- years
+        <br>
+        -- months
+        <br>
+        -- days
+      </div>
+      </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://dev-jo.vercel.app/">Dev-J0</a>.
+    </div>
+    </footer>
+  <script src="./app.js"></script>
 </body>
 </html>

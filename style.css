@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+height: 100vh;
+background-color: grey;
+}
+
+.mainContainer {
+    position: fixed;
+    top: 150px;
+    right: 370px;
+    height: 31em;
+    background-color: whitesmoke;
+    width: 40em;
+    display: flex;
+    align-self: center;
+    border-radius: 10px 15px 150px 10px;
+    padding: 50px 60px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px rgb(117, 117, 117);;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+}
+
+.firstContainer {
+    height: 100px;
+}
+
+.secondContainer {
+    height: 200px;
+     display: flex;
+     flex-direction: column;
+     padding: 20px 100px 20px 0px;
+     font-size: 80px;
+     font-weight: 1000;
+     margin-top: 30px;
+}
