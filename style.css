@@ -67,8 +67,9 @@ cursor: pointer;
     color: rgb(90, 90, 90);
     width: 80px; 
     font-weight: bolder;
-     font-size: 15px;
+    font-size: 15px;
 }
+
 
 #button  {
    border: 0; 

@@ -10,9 +10,9 @@
 <body>
 <div class="mainContainer">
     <div class="firstContainer">
-      <form>
+      <form id="form" onsubmit={handleSubmit}>
         
-        <div class="day">
+        <div id="day">
           <label for="day">DAY</label>
           <input 
           id="insert-day" 
@@ -20,8 +20,6 @@
           type="number" 
           min="01" 
           max="31" required>
-     
-      
         </div>
         
         <div class="month">
@@ -45,9 +43,13 @@
             max="2024" required>
        
         </div>
+        
         <button type="submit" title="submit" id="button" alt="submit-button">
         <img src="./assets/images/icon-arrow.svg" width="40" height="40" alt="submit-button" >
+        <div id="error"></div>
       </form>
+     
+
     </div>
 
     <div class="secondContainer">
